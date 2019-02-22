@@ -1,2 +1,2 @@
 # algorithms-js
-Collection of algoritms written in EcmaScript 6.
+Collection of algorithms written in EcmaScript 6.
