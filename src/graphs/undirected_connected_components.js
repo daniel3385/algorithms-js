@@ -13,8 +13,6 @@ class Graph {
     }
 
     BFS(s, numCC) {
-	//for(let i=0; i<this.numOfVertices; i++)
-	 //   this.adjList[i].visited = false
 
 	let queue = new Array()
 	this.adjList[s].explored = true
@@ -24,7 +22,6 @@ class Graph {
 	    s = queue.shift()
 	    this.adjList[s].numCC = numCC
 	    this.adjList[s].forEach(function (item, index) {
-console.log(item)
 		if(this.adjList[item].explored == false) {
 		    this.adjList[item].explored = true
 		    queue.push(item)
